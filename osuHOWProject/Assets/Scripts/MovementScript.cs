@@ -12,6 +12,8 @@ public class MovementScript : MonoBehaviour
     private float spdModeifier = 1;
     bool OnGround;
 
+    private bool key;
+
     void Awake()
     {
         playerRb = GetComponent<Rigidbody>();
@@ -55,6 +57,11 @@ public class MovementScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             OnGround = true;
+        }
+
+        if (collision.gameObject.CompareTag("Door"))
+        {
+
         }
     }
 }
