@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 9776
+  controlID: 8456
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 0
-  controlID: 9777
+  controlID: 8462
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1028
     height: 731
-  m_MinSize: {x: 201, y: 442}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 201, y: 421}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 9778
+  controlID: 8520
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +192,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 16}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 9758
+  controlID: 8463
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -451,9 +451,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.1880279, y: 0.20964383, z: -1.8715485}
+    m_Target: {x: 589.7402, y: 224.40405, z: 5.743805}
     speed: 2
-    m_Value: {x: -2.1880279, y: 0.20964383, z: -1.8715485}
+    m_Value: {x: 589.7402, y: 224.40405, z: 5.743805}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -499,13 +499,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0846015, y: 0.81934524, z: -0.12534876, w: -0.5529975}
+    m_Target: {x: 0.13770084, y: -0.049012233, z: 0.0068228655, w: 0.9892416}
     speed: 2
-    m_Value: {x: -0.08460139, y: 0.81934416, z: -0.1253486, w: -0.5529968}
+    m_Value: {x: -0.13770084, y: 0.049012233, z: -0.0068228655, w: -0.9892416}
   m_Size:
-    m_Target: 2.966025
+    m_Target: 241.0873
     speed: 2
-    m_Value: 2.966025
+    m_Value: 241.0873
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -551,10 +551,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 307.2
-    y: 80.8
-    width: 912
-    height: 421
+    x: 0
+    y: 73.6
+    width: 1027
+    height: 332
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &17
 MonoBehaviour:
@@ -585,9 +585,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 90c3ffff
-      m_LastClickedID: -15472
-      m_ExpandedIDs: fef1ffff00f3ffffccfaffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: aeb2ffffc8b2ffffe2b2fffffeb3ffff32b5ffff4cb5ffff34bcffff8cbdffff6ac1ffff08c6ffff30c7ffff6accffff80ccffff18d0ffff16d2ffffc0d2ffff56d3fffff4d3ffff7ad4ffff16d5ffff1ed9ffffcce9fffff4e9ffff98f5ffff34faffffb8350000a4380000f03800009c390000e8390000943a0000e03a0000c83b0000da3b0000c83d00009e3e0000e63f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -650,20 +650,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Material
+    - Assets/Scenes
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Leo Enxu\Documents\GitHub\osuHOWProject\osuHOWProject
+  m_LastProjectPath: C:\Users\happy\OneDrive\Documents\GitHub\osuHOWProject\osuHOWProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 60340000
     m_LastClickedID: 13408
-    m_ExpandedIDs: ffffffff000000006034000064340000663400006834000000ca9a3b
+    m_ExpandedIDs: ffffffff000000006234000064340000663400006834000082340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -691,7 +690,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000006034000064340000663400006834000000ca9a3b
+    m_ExpandedIDs: ffffffff000000006234000064340000663400006834000082340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -810,4 +809,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 360
+  m_LastVerticalScrollValue: 0
