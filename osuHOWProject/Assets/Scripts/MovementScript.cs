@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovementScript : MonoBehaviour
 {
@@ -61,7 +62,8 @@ public class MovementScript : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Door"))
         {
-
+            SceneManager.LoadScene("WinScene");
+            //Debug.Log("Touched");
         }
     }
 }
