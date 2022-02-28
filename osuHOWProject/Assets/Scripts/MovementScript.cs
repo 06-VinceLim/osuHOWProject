@@ -56,5 +56,11 @@ public class MovementScript : MonoBehaviour
             SceneManager.LoadScene("WinScene");
             //Debug.Log("Touched");
         }
+
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            SceneManager.LoadScene("LoseScene");
+
+        }
     }
 }
