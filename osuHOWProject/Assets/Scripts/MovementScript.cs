@@ -5,52 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class MovementScript : MonoBehaviour
 {
-    public float speed = 8.0f;
-    public Camera followCam;
+    public CharacterController controller;
 
-    private Rigidbody playerRb;
-    private Vector3 camPos;
-    private float spdModeifier = 1;
+    public float speed = 12f;
+
     bool OnGround;
 
-    private bool key;
-
-    void Awake()
+    void Start()
     {
-        playerRb = GetComponent<Rigidbody>();
-        camPos = followCam.transform.position - transform.position;
+        OnGround = true;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        float hInput = Input.GetAxis("Horizontal");
-        float vInput = Input.GetAxis("Vertical");
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(hInput, 0 ,vInput).normalized;
+        Vector3 move = transform.right * x + transform.forward * z;
 
-        if (movement == Vector3.zero)
-        {
-            return;
-        }
-
-        Quaternion targetRotation = Quaternion.LookRotation(movement);
-        targetRotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 360 * Time.fixedDeltaTime);
-
-        playerRb.MovePosition(playerRb.position + movement * speed * Time.fixedDeltaTime);
-        playerRb.MoveRotation(targetRotation);
-
-            if (Input.GetKey(KeyCode.Space) && OnGround == true)
-        {
-            playerRb.AddForce(Vector3.up * 7, ForceMode.Impulse);
-
-            OnGround = false;
-        }
-    }
-
-    void LateUpdate()
-    {
-        followCam.transform.position = playerRb.position + camPos;
+        controller.Move(move * speed * Time.deltaTime);
     }
 
     void OnCollisionEnter(Collision collision)
